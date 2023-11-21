@@ -10,7 +10,7 @@ public class DeFrontExample {
 
     public static String deFront(String str) {
         // Check if the first character is 'a'
-        boolean isFirstA = str.length() > 0 && str.charAt(0) == 'a';
+        boolean isFirstA = !str.isEmpty() && str.charAt(0) == 'a';
 
         // Check if the second character is 'b'
         boolean isSecondB = str.length() > 1 && str.charAt(1) == 'b';
