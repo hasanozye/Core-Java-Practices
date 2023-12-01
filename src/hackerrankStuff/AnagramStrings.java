@@ -7,7 +7,7 @@ public class AnagramStrings {
     public static void main(String[] args) {
 
         String a = "java";
-        String b = "java";
+        String b = "avaj";
 
         System.out.println(isAnagram(a, b));
 
@@ -15,8 +15,8 @@ public class AnagramStrings {
     }
 
 
-    public static boolean isAnagram(String a, String b) {
-        if (a.length() != b.length()) {
+    public static boolean isAnagram(String str1, String str2) {
+        if (str1.length() != str2.length()) {
             return false;
         }
 
@@ -24,12 +24,12 @@ public class AnagramStrings {
         int[] frequency = new int[charCount];
 
         // count occurrences of each character in a
-        for (char c : a.toLowerCase().toCharArray()) {
+        for (char c : str1.toLowerCase().toCharArray()) {
             frequency[c - 'a']++;
         }
 
         // subtract occurrences of each character in b
-        for (char c : b.toLowerCase().toCharArray()) {
+        for (char c : str2.toLowerCase().toCharArray()) {
             frequency[c - 'a']--;
         }
 
