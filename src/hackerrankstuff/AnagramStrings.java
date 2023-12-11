@@ -1,6 +1,4 @@
-package hackerrankStuff;
-
-import java.util.Arrays;
+package hackerrankstuff;
 
 public class AnagramStrings {
 

@@ -1,4 +1,4 @@
-package hackerrankStuff;
+package hackerrankstuff;
 
 import java.util.Calendar;
 

@@ -1,9 +1,6 @@
-package hackerrankStuff;
+package hackerrankstuff;
 
 import java.util.Scanner;
-
-import java.io.*;
-import java.util.*;
 
 public class Solution {
 
