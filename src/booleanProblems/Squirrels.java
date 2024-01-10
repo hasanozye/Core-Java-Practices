@@ -1,6 +1,6 @@
 package booleanProblems;
 
-public class squirrels {
+public class Squirrels {
     public boolean squirrelPlay(int temperature, boolean isSummer) {
         if(isSummer) {
             return (temperature >= 60 && temperature <= 100);

@@ -1,6 +1,6 @@
 package booleanProblems;
 
-public class maxMod5 {
+public class MaxMod5 {
         public static void main(String[] args) {
             System.out.println(largerValue(8, 3));   // Output: 8
             System.out.println(largerValue(7, 12));  // Output: 7
