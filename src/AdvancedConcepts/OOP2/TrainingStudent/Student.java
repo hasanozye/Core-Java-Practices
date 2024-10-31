@@ -7,7 +7,7 @@ public class Student {
     String firstName;
     String lastName;
     int age;
-    int[] grades = new int[3];
+    int[] grades;
 
     public void showInfo() {
         System.out.printf("%s %s %s", firstName, lastName, Arrays.toString(grades));
@@ -18,8 +18,8 @@ public class Student {
         for (int grade : grades) {
             sum += grade;
         }
-        sum = sum / grades.length;
-        return sum;
+        double avg = sum / grades.length;
+        return avg;
     }
 
 
