@@ -1,22 +1,28 @@
 package AdvancedConcepts.OOP3.GeometrikSekiller;
 
+/**
+ * Kare nesnelerini temsil eder
+ */
 public class Kare {
 
-    int kenar;
-
+    public int kenar;
     public Kare(int kenar) {
         this.kenar = kenar;
     }
 
-    public static int alanHesapla(int kenar) {
+    /**
+     * Karenin alan hesabını yapar. kenar x kenar
+     * @return kenar
+     */
+    public int alanHesapla() {
         return kenar * kenar;
     }
 
-    public static int cevreHesapla(int kenar) {
+    public int cevreHesapla() {
         return 4 * kenar;
     }
 
-    public static double kosegenUzunlugu(int kenar) {
+    public double kosegenUzunlugu() {
         return kenar * Math.sqrt(2);
     }
 
