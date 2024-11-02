@@ -2,18 +2,26 @@ package AdvancedConcepts.OOP3.GeometrikSekiller;
 
 public class Daire {
 
-    int yaricap;
+    /*
+    Sırayla:
+    1-) Önce değişkenler
+    2-) Sonra Constructor'lar
+    3-) Sonra Getter Setter'lar
+    4-) Sonra diğer metodlar.
+     */
+
+    public int yaricap;
 
     public Daire(int yaricap) {
         this.yaricap = yaricap;
     }
 
-    public static double alanHesapla(int yaricap) {
-        return Math.PI * yaricap * yaricap;
+    public double alanHesapla() {
+        return Math.PI * Math.pow(yaricap, 2);
     }
 
 
-    public static double cevreHesapla(int yaricap) {
+    public double cevreHesapla() {
         return 2 * Math.PI * yaricap;
     }
 
