@@ -1,0 +1,18 @@
+
+
+Geometrik şekiller
+1. Kare
+2. Dikdörtgen
+3. Üçgen
+
+
+Ortak Özellikler
+1. Kenarlar
+2. Köşeler
+3. Renk
+
+
+Ortak Davranışlar
+1. Alan Hesaplama
+2. Çevre Hesaplama
+3. İç Açıları Toplamı
