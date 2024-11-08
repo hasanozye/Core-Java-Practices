@@ -3,7 +3,7 @@ package AdvancedConcepts.OOP6;
 public class Kedi extends Hayvan {
 
     public Kedi() {
-        System.out.println("Kedi nesnesi oluşturuldu.");
+        //System.out.println("Kedi nesnesi oluşturuldu.");
     }
 
     public void avlan() {
@@ -12,7 +12,7 @@ public class Kedi extends Hayvan {
 
     @Override
     public void beslen() {
-        System.out.println("Kedi caiz e");
+        System.out.println("Kedi caiz et ile besleniyorr");
     }
 
 }

@@ -4,7 +4,7 @@ public class Hayvan {
 
 
     public Hayvan(){
-        System.out.println("Hayvan nesnesi oluşturuldu.");
+        //System.out.println("Hayvan nesnesi oluşturuldu.");
     }
 
     public void beslen(){
