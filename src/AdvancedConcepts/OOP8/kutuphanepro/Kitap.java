@@ -2,19 +2,20 @@ package AdvancedConcepts.OOP8.kutuphanepro;
 
 public class Kitap {
 
-    private  String adi;
+    private boolean gecerliMi = true;
+
+    private String adi;
     private String yazari;
     private int sayfaAdedi;
 
-    public Kitap(){
+    public Kitap() {
 
     }
 
-
     public Kitap(String adi, String yazari, int sayfaAdedi) {
-        this.adi = adi;
-        this.yazari = yazari;
-        this.sayfaAdedi = sayfaAdedi;
+        setAdi(adi);
+        setYazari(yazari);
+        setSayfaAdedi(sayfaAdedi);
     }
 
     @Override
@@ -27,7 +28,12 @@ public class Kitap {
     }
 
     public void setAdi(String adi) {
-        this.adi = adi;
+        if (adi != null && !adi.isEmpty() && adi.isBlank()) {
+            this.adi = adi;
+        } else {
+            gecerliMi = false;
+            System.err.println("Kitap adi boş olamaz");
+        }
     }
 
     public String getYazari() {
@@ -35,18 +41,32 @@ public class Kitap {
     }
 
     public void setYazari(String yazari) {
-        this.yazari = yazari;
+        if (yazari != null && !yazari.isEmpty() && !yazari.isBlank()) {
+            this.yazari = yazari;
+        } else {
+            gecerliMi = false;
+            System.err.println("Yazarı boş olamaz");
+        }
     }
 
     public int getSayfaAdedi() {
         return sayfaAdedi;
     }
 
-    public void setSayfaAdedi(int sayfaAdedi){
-        if (sayfaAdedi>0){
+    public void setSayfaAdedi(int sayfaAdedi) {
+        if (sayfaAdedi > 0) {
             this.sayfaAdedi = sayfaAdedi;
-        }else {
+        } else {
+            gecerliMi = false;
             System.err.println("Sayfa aded negatif olamaz");
+        }
+    }
+
+    public void kaydet() {
+        if (gecerliMi) {
+            System.out.println(this + "veritabanına kaydedildi");
+        } else {
+            System.err.println("Kayıt işlemi başarısız.");
         }
     }
 
