@@ -22,8 +22,11 @@ public class Kutu {
     }
 
     public void setGenislik(int genislik) {
-        if (genislik < 1) return;
-        this.genislik = genislik;
+        if (genislik > 0) {
+            this.genislik = genislik;
+        } else {
+            this.genislik = 1;
+        }
     }
 
     public int getDerinlik() {
@@ -31,7 +34,11 @@ public class Kutu {
     }
 
     public void setDerinlik(int derinlik) {
-        this.derinlik = derinlik;
+        if (derinlik > 0) {
+            this.derinlik = derinlik;
+        } else {
+            this.derinlik = 1;
+        }
     }
 
     public int getYukseklik() {
@@ -39,7 +46,11 @@ public class Kutu {
     }
 
     public void setYukseklik(int yukseklik) {
-        this.yukseklik = yukseklik;
+        if (yukseklik > 0){
+            this.yukseklik = yukseklik;
+        }else {
+         this.yukseklik = 1;
+        }
     }
 
     public int getHacim() {
