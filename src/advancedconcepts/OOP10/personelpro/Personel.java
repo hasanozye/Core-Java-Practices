@@ -5,8 +5,8 @@ public class Personel {
     private int sicilNo;
     private String adi;
     private String soyadi;
-    private float maasi;
-    private int iseGirisYili;
+    private double maasi;
+    private long iseGirisYili;
 
     public Personel() {
 
@@ -45,7 +45,7 @@ public class Personel {
         this.soyadi = soyadi;
     }
 
-    public float getMaasi() {
+    public double getMaasi() {
         return maasi;
     }
 
@@ -53,7 +53,7 @@ public class Personel {
         this.maasi = maasi;
     }
 
-    public int getIseGirisYili() {
+    public long getIseGirisYili() {
         return iseGirisYili;
     }
 
@@ -75,8 +75,8 @@ public class Personel {
 
     public static void maasaZamYap(Personel personel, int zamOrani) {
         if (personel != null || zamOrani <= 0) return;
-        float mevcutMaas = personel.getMaasi();
-        personel.setMaasi(mevcutMaas + (mevcutMaas * zamOrani/100));
+        double mevcutMaas = personel.getMaasi();
+        personel.setMaasi((float) (mevcutMaas + (mevcutMaas * zamOrani/100)));
     }
 
 
