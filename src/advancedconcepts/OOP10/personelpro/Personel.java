@@ -66,7 +66,7 @@ public class Personel {
     }
 
     public void molaVer() {
-        System.out.println("Personel mola verdi.");
+        System.out.println("Personel mola verdi. ALL REPORTS BRANCH EKLENDİ. OLDU ÖYLE ŞEYLER");
     }
 
     public void paydosYap() {
