@@ -2,7 +2,7 @@ package advancedconcepts.OOP10.personelpro;
 
 public class Personel {
 
-    private int sicilNo;
+    private int sicilNo123;
     private String adi;
     private String soyadi;
     private double maasi;
@@ -12,8 +12,8 @@ public class Personel {
 
     }
 
-    public Personel(int sicilNo, String adi, String soyadi, float maasi, int iseGirisYili) {
-        this.sicilNo = sicilNo;
+    public Personel(int sicilNo123, String adi, String soyadi, float maasi, int iseGirisYili) {
+        this.sicilNo123 = sicilNo123;
         this.adi = adi;
         this.soyadi = soyadi;
         this.maasi = maasi;
@@ -21,12 +21,12 @@ public class Personel {
     }
 
 
-    public int getSicilNo() {
-        return sicilNo;
+    public int getSicilNo123() {
+        return sicilNo123;
     }
 
-    public void setSicilNo(int sicilNo) {
-        this.sicilNo = sicilNo;
+    public void setSicilNo123(int sicilNo123) {
+        this.sicilNo123 = sicilNo123;
     }
 
     public String getAdi() {
