@@ -6,11 +6,11 @@ public class MainApp {
 
     public static void main(String[] args) {
         Personel per1 = new Personel();
-        int sicilNo = per1.getSicilNo();
-        per1.setSicilNo(5);
+        int sicilNo = per1.getSicilNo123();
+        per1.setSicilNo123(5);
         per1.setAdi("hakan");
         per1.setSoyadi("ilhami");
-        per1.setSicilNo(1);
+        per1.setSicilNo123(1);
         per1.setIseGirisYili(1990);
         per1.setMaasi(2000.3F);
 
