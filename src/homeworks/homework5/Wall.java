@@ -6,8 +6,8 @@ public class Wall {
     double height;
 
     public Wall(double height, double width) {
-        setHeight(height);
-        setWidth(width);
+        this.height = height;
+        this.width = width;
     }
 
     public Wall() {
@@ -37,11 +37,6 @@ public class Wall {
         } else {
             this.height = height;
         }
-    }
-
-
-    public double getArea() {
-        return height * width;
     }
 
 
