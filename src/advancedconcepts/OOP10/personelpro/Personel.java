@@ -2,7 +2,7 @@ package advancedconcepts.OOP10.personelpro;
 
 public class Personel {
 
-    private int sicilNo123;
+    private int sicilNo;
     private String adi;
     private String soyadi;
     private double maasi;
@@ -12,8 +12,8 @@ public class Personel {
 
     }
 
-    public Personel(int sicilNo123, String adi, String soyadi, float maasi, int iseGirisYili) {
-        this.sicilNo123 = sicilNo123;
+    public Personel(int sicilNo, String adi, String soyadi, float maasi, int iseGirisYili) {
+        this.sicilNo = sicilNo;
         this.adi = adi;
         this.soyadi = soyadi;
         this.maasi = maasi;
@@ -22,11 +22,11 @@ public class Personel {
 
 
     public int getSicilNo123() {
-        return sicilNo123;
+        return sicilNo;
     }
 
-    public void setSicilNo123(int sicilNo123) {
-        this.sicilNo123 = sicilNo123;
+    public void setSicilNo123(int sicilNo) {
+        this.sicilNo = sicilNo;
     }
 
     public String getAdi() {
@@ -49,7 +49,7 @@ public class Personel {
         return maasi;
     }
 
-    public void setMaasi(float maasi) {
+    public void setMaasi(double maasi) {
         this.maasi = maasi;
     }
 
@@ -73,10 +73,19 @@ public class Personel {
         System.out.println("Personel paydos yaptı");
     }
 
-    public static void maasaZamYap(Personel personel, int zamOrani) {
-        if (personel != null || zamOrani <= 0) return;
+    public void gorevYap(){
+        System.out.println("Personel Görevini yapıyor.");
+    }
+
+    public static boolean maasaZamYap(Personel personel, int zamOrani) {
+        if (personel == null || zamOrani <= 0) {
+            return false;
+        }
+        // "||" , "&&" shortcircut, yani kısayol. Burda ik itane kullanılmasının sebebi, ikinciye bakmıyor direkt geçiyor.
+        // bazen array'in null olmadığını veya lengrhini kontrol ederken mesela 2.nin hata vermemesi için yapılıyor sık sık.
         double mevcutMaas = personel.getMaasi();
-        personel.setMaasi((float) (mevcutMaas + (mevcutMaas * zamOrani/100)));
+        personel.setMaasi((mevcutMaas + (mevcutMaas * zamOrani / 100)));
+        return true;
     }
 
 
