@@ -1,5 +1,7 @@
 package advancedconcepts.day33.array2D;
 
+import java.util.Arrays;
+
 public class MainApp {
 
     public static void main(String[] args) {
@@ -19,6 +21,20 @@ public class MainApp {
                 {53, 69},
 
         };
+
+        String[] isimler = {"Ahmet", "Ayşe", "Şengül", "Orhan", "Betül"};
+
+        //System.out.println("Notlar length: " + notlar.length);
+
+        System.out.println("İsim\tViz\tFin");
+        for (int i = 0; i < notlar.length; i++) {
+            System.out.print(isimler[i] + "\t");
+            for (int j = 0; j < notlar[i].length; j++) {
+                System.out.print(notlar[i][j] + "\t");
+            }
+            System.out.println();
+
+        }
     }
 
 }
