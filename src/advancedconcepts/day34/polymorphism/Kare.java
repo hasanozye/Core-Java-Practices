@@ -21,12 +21,12 @@ public class Kare extends Sekil {
     }
 
     @Override
-    double alanHesapla() {
+    protected double alanHesapla() {
         return kenar * kenar;
     }
 
     @Override
-    double cevreHesapla() {
+    protected double cevreHesapla() {
         return 4 * kenar;
     }
 }
