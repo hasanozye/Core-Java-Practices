@@ -17,6 +17,7 @@ public class MainApp {
         System.out.println();
 
         Sekil sekil = new Daire(7);
+        double yaricap = ((Daire) sekil).alanHesapla();
         Sekil[] sekiller = new Sekil[4];
         sekiller[0] = new Daire(5);
         sekiller[1] = new Kare(6);
