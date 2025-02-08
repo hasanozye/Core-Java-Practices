@@ -1,7 +1,5 @@
 package advancedconcepts.day34.polymorphism;
 
-import org.jetbrains.annotations.NotNull;
-
 public class MainApp1 {
 
     public static void main(String[] args) {
@@ -20,7 +18,7 @@ public class MainApp1 {
 
     }
 
-    public static void sekilInfo(@NotNull Sekil sekil) {
+    public static void sekilInfo(Sekil sekil) {
         System.out.println("-".repeat(30));
         System.out.printf("Alan = %.2f - Çevre = %.2f\n", sekil.alanHesapla(), sekil.cevreHesapla());
     }
