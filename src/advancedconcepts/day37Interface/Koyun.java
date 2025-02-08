@@ -1,7 +1,7 @@
 package advancedconcepts.day37Interface;
 
-public interface Avci {
+public class Koyun extends Hayvan{
 
-    void avlan();
+
 
 }

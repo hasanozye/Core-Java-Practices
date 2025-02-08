@@ -1,9 +1,11 @@
 package advancedconcepts.day37Interface;
 
-public class Kaplan extends Avci {
+public class Kaplan extends Hayvan implements Avci {
 
-    public void avlan() {
-        System.out.println("Kaplan avlanıyor");
+    @Override
+    public void avlan(){
+        System.out.println("Kaplan avlanıyor..");
     }
+
 
 }
